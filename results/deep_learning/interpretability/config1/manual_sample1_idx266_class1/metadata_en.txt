@@ -1,0 +1,6 @@
+Index: 266
+Shape: (3, 128, 128, 32)
+Filename: 11313_1001336_t2w.mha
+Ground-truth class: 1 (csPCa)
+Prediction: 1 (csPCa)
+Probabilities: [no_csPCa: 0.0332, csPCa: 0.9668]
