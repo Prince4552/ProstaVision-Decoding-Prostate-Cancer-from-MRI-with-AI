@@ -1,8 +1,8 @@
 === Final Hold-out Optimization: SVM ===
 
-Feature table: /clinicfs/userhomes/jaalzate/Projects/Radiomics-Prostate-Cancer/artifacts/radiomics/concatenated_data/features_all_gland.csv
-Training-only selection CSV: /clinicfs/userhomes/jaalzate/Projects/Radiomics-Prostate-Cancer/results/radiomics/most_discriminant/gland/best_results/svm/feature_selection/training_only_feature_selection.csv
-Training-only selected features TXT: /clinicfs/userhomes/jaalzate/Projects/Radiomics-Prostate-Cancer/results/radiomics/most_discriminant/gland/best_results/svm/feature_selection/selected_features_training_only.txt
+Feature table: artifacts/radiomics/concatenated_data/features_all_gland.csv
+Training-only selection CSV: results/radiomics/most_discriminant/gland/best_results/svm/feature_selection/training_only_feature_selection.csv
+Training-only selected features TXT: results/radiomics/most_discriminant/gland/best_results/svm/feature_selection/selected_features_training_only.txt
 Selected features: 42
 FDR alpha: 0.05
 Correlation threshold: 0.9
@@ -15,11 +15,11 @@ Best parameters (roc_auc): OrderedDict([('svc__C', 1000.0), ('svc__coef0', 1.0),
   CV balanced_accuracy: 0.712 +/- 0.018
 
 === Hold-out Test Evaluation (Uncalibrated) ===
-  Confusion matrix figure: /clinicfs/userhomes/jaalzate/Projects/Radiomics-Prostate-Cancer/results/radiomics/most_discriminant/gland/best_results/svm/confusion_matrix.png
+  Confusion matrix figure: results/radiomics/most_discriminant/gland/best_results/svm/confusion_matrix.png
   AUC: 0.864
   AUC 95% CI (bootstrap): [0.817, 0.906]
-  Bootstrap summary CSV: /clinicfs/userhomes/jaalzate/Projects/Radiomics-Prostate-Cancer/results/radiomics/most_discriminant/gland/best_results/svm/test_confidence_intervals_uncalibrated.csv
-  ROC with CI figure: /clinicfs/userhomes/jaalzate/Projects/Radiomics-Prostate-Cancer/results/radiomics/most_discriminant/gland/best_results/svm/roc_test_uncalibrated_ci.png
+  Bootstrap summary CSV: results/radiomics/most_discriminant/gland/best_results/svm/test_confidence_intervals_uncalibrated.csv
+  ROC with CI figure: results/radiomics/most_discriminant/gland/best_results/svm/roc_test_uncalibrated_ci.png
   MCC: 0.554
   Kappa: 0.548
   F1: 0.688
@@ -44,8 +44,8 @@ weighted avg       0.82      0.81      0.81       303
 === Calibration Metrics ===
   AUC (post): 0.865
   AUC 95% CI (post, bootstrap): [0.818, 0.907]
-  Bootstrap summary CSV (post): /clinicfs/userhomes/jaalzate/Projects/Radiomics-Prostate-Cancer/results/radiomics/most_discriminant/gland/best_results/svm/calibration/test_confidence_intervals_calibrated.csv
-  ROC with CI figure (post): /clinicfs/userhomes/jaalzate/Projects/Radiomics-Prostate-Cancer/results/radiomics/most_discriminant/gland/best_results/svm/calibration/roc_test_calibrated_ci.png
+  Bootstrap summary CSV (post): results/radiomics/most_discriminant/gland/best_results/svm/calibration/test_confidence_intervals_calibrated.csv
+  ROC with CI figure (post): results/radiomics/most_discriminant/gland/best_results/svm/calibration/roc_test_calibrated_ci.png
   ECE  (pre):  0.087
   ECE  (post): 0.100
   Brier (pre): 0.137
@@ -77,7 +77,7 @@ weighted avg       0.81      0.80      0.80       303
 
 AUC: 0.865
 AUC 95% CI (bootstrap): [0.818, 0.907]
-Bootstrap summary CSV (best threshold): /clinicfs/userhomes/jaalzate/Projects/Radiomics-Prostate-Cancer/results/radiomics/most_discriminant/gland/best_results/svm/calibration/test_confidence_intervals_calibrated_best_threshold.csv
+Bootstrap summary CSV (best threshold): results/radiomics/most_discriminant/gland/best_results/svm/calibration/test_confidence_intervals_calibrated_best_threshold.csv
 MCC: 0.535
 Kappa: 0.530
 F1: 0.674
@@ -88,5 +88,4 @@ PPV: 0.618
 NPV: 0.891
 Balanced Accuracy: 0.781
 
-Confusion matrix at calibrated threshold=0.30: /clinicfs/userhomes/jaalzate/Projects/Radiomics-Prostate-Cancer/results/radiomics/most_discriminant/gland/best_results/svm/calibration/confusion_matrix_best_threshold.png
-
+Confusion matrix at calibrated threshold=0.30: results/radiomics/most_discriminant/gland/best_results/svm/calibration/confusion_matrix_best_threshold.png
