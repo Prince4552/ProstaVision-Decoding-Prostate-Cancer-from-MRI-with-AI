@@ -1,15 +1,15 @@
-=== Gradient Boosting: glándula vs. imagen completa ===
+=== Gradient Boosting: Gland vs. Full Image ===
 
-AUC (mediana [IQR])
-  • Glándula............. 0.8080 [0.0302]
-  • Imagen completa...... 0.5905 [0.0356]
+AUC (median [IQR])
+  • Gland................. 0.8080 [0.0302]
+  • Full image............ 0.5905 [0.0356]
 
-Test de Wilcoxon pareado (dos colas)
+Paired Wilcoxon Test (two-sided)
   W = 0.0000,  p = 1.7764e-15
-Conclusión: DIFERENCIA SIGNIFICATIVA (α = 0.05)
+Conclusion: SIGNIFICANT DIFFERENCE (α = 0.05)
 
-Wilcoxon unilateral (H₁: glándula > full)
+One-sided Wilcoxon Test (H₁: gland > full)
   p = 1.0000e+00
 
-Resumen:
-  El enfoque con mayor mediana de AUC es **glándula**.
+Summary:
+  The approach with the higher median AUC is **gland**.
