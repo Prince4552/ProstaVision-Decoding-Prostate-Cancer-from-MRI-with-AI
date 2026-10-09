@@ -329,7 +329,7 @@ The values below are the mean and standard deviation across the reported 50 vali
 - **SVM** also has the highest mean balanced accuracy: **0.7332**.
 - Because the dataset is imbalanced, accuracy should not be considered by itself. Sensitivity, specificity, F1, balanced accuracy, and other metrics are also important.
 
-[Detailed cross-validation results](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/most_discriminant/gland/aggregated_performance/summary_metrics.csv)
+[Detailed cross-validation results](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/most_discriminant/gland/aggregated_performance/summary_metrics.csv)
 
 ## 3. Aggregated Out-of-Fold Radiomics Results
 
@@ -371,9 +371,9 @@ All confidence intervals below are reported as **95% confidence intervals**.
 - Random Forest has higher OOF specificity than Logistic Regression: **0.9181 vs 0.7358**.
 - Therefore, there is no single model that is automatically “best” for every purpose. The preferred model depends on which type of error matters more.
 
-[OOF AUC and confidence intervals](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/most_discriminant/gland/aggregated_performance/auc_ci_summary.txt)
+[OOF AUC and confidence intervals](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/most_discriminant/gland/aggregated_performance/auc_ci_summary.txt)
 
-[Full OOF metric table](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/most_discriminant/gland/aggregated_performance/summary_metrics.csv)
+[Full OOF metric table](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/most_discriminant/gland/aggregated_performance/summary_metrics.csv)
 
 ## 4. Separate Radiomics Hold-Out Experiment
 
@@ -430,7 +430,7 @@ The report also performs a threshold sweep and selects **0.30** based on F1. At 
 
 > **Important:** The threshold `0.30` was selected by sweeping F1 on the hold-out test set itself. Therefore, the metrics at this selected threshold should not be presented as an unbiased final test estimate.
 
-[Full SVM hold-out report](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/most_discriminant/gland/best_results/svm/report.txt)
+[Full SVM hold-out report](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/most_discriminant/gland/best_results/svm/report.txt)
 
 ### Logistic Regression Hold-Out Results
 
@@ -464,7 +464,7 @@ The report chooses threshold **0.30** after a hold-out threshold sweep. At that 
 
 The same hold-out threshold-selection caveat applies here.
 
-[Full Logistic Regression hold-out report](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/most_discriminant/gland/best_results/report.txt)
+[Full Logistic Regression hold-out report](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/most_discriminant/gland/best_results/report.txt)
 
 ## 5. Radiomics: Gland Region vs Full Image
 
@@ -488,7 +488,7 @@ In this radiomics experiment, all six models have higher reported median AUC whe
 
 This result is specific to the **radiomics gland-vs-full experiment**. It should not automatically be applied to the deep-learning comparison.
 
-[Detailed gland-vs-full radiomics results](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/tree/main/results/radiomics/most_discriminant/gland_vs_full)
+[Detailed gland-vs-full radiomics results](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/tree/main/results/radiomics/most_discriminant/gland_vs_full)
 
 ## 6. Radiomics Statistical Comparison Between Classifiers
 
@@ -514,11 +514,11 @@ Other radiomics experiments report:
 | Feature-selected full image | 152.0914 | 4.7894e-31 | Differences across classifiers |
 | All-features gland | 216.5600 | 8.1055e-45 | Differences across classifiers |
 
-[Feature-selected gland statistical results](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/most_discriminant/gland/model_differences/model_differences_summary.txt)
+[Feature-selected gland statistical results](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/most_discriminant/gland/model_differences/model_differences_summary.txt)
 
-[Feature-selected full-image statistical results](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/most_discriminant/full/model_differences/model_differences_summary.txt)
+[Feature-selected full-image statistical results](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/most_discriminant/full/model_differences/model_differences_summary.txt)
 
-[All-features gland statistical results](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/all/gland/model_differences/model_differences_summary.txt)
+[All-features gland statistical results](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/all/gland/model_differences/model_differences_summary.txt)
 
 ## 7. Deep-Learning Performance on Gland-Focused Input
 
@@ -554,7 +554,7 @@ The other columns are mean F1, accuracy, balanced accuracy, sensitivity, and spe
 - Config8 has high mean specificity (**0.9011**) but low mean sensitivity (**0.3219**).
 - Base ViT has AUC **0.5** and specificity **0.0** across these splits. This pattern is consistent with degenerate class predictions rather than useful discrimination.
 
-[Deep-learning model results](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/deep_learning/model_comparison/simple_statistical_analysis/gland_analysis/csv/model_summary_statistics.csv)
+[Deep-learning model results](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/deep_learning/model_comparison/simple_statistical_analysis/gland_analysis/csv/model_summary_statistics.csv)
 
 ### Deep-Learning Statistical Test
 
@@ -566,7 +566,7 @@ The repository's AUC statistical analysis reports:
 - Overall Friedman result: statistically significant differences across the models.
 - No pairwise comparison remained statistically significant after multiple-comparison correction.
 
-[Deep-learning statistical analysis](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/deep_learning/model_comparison/simple_statistical_analysis/gland_analysis/statistical_analysis/statistical_analysis_test_auc.txt)
+[Deep-learning statistical analysis](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/deep_learning/model_comparison/simple_statistical_analysis/gland_analysis/statistical_analysis/statistical_analysis_test_auc.txt)
 
 ## 8. Deep Learning: Gland ROI vs Full Image
 
@@ -593,7 +593,7 @@ The gland-focused median AUC is numerically higher for **13 of the 14 models**, 
 
 However, none of the listed two-sided p-values is below **0.05**, so this comparison does **not** establish a statistically significant gland-versus-full difference for the deep-learning models.
 
-[Deep-learning gland-vs-full results](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/tree/main/results/deep_learning/model_comparison/simple_statistical_analysis/gland_vs_full)
+[Deep-learning gland-vs-full results](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/tree/main/results/deep_learning/model_comparison/simple_statistical_analysis/gland_vs_full)
 
 ## 9. Direct Radiomics vs Deep-Learning Comparison
 
@@ -630,7 +630,7 @@ In particular, the reported **p = 0.1250** means that we should **not claim that
 
 If the paired Cohen's `d` is quoted, its sign should be preserved exactly as reported. It should not be over-interpreted without checking the comparison script and its sign convention.
 
-[Direct radiomics-vs-DL comparison](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/compare_best_radiomics_dl/summary.txt)
+[Direct radiomics-vs-DL comparison](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/compare_best_radiomics_dl/summary.txt)
 
 ## 10. Additional Radiomics Experiments
 
@@ -659,9 +659,9 @@ Statistical result:
 - Friedman p-value: **8.1055e-45**
 - The report concludes that there are overall statistically significant differences across classifiers.
 
-[All-features gland results](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/all/gland/resultados_features_all_gland_all.csv)
+[All-features gland results](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/all/gland/resultados_features_all_gland_all.csv)
 
-[All-features gland statistical test](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/all/gland/model_differences/model_differences_summary.txt)
+[All-features gland statistical test](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/all/gland/model_differences/model_differences_summary.txt)
 
 ### Feature-Selected Full-Image Radiomics
 
@@ -681,9 +681,9 @@ Statistical result:
 - Friedman statistic: **152.0914**
 - Friedman p-value: **4.7894e-31**
 
-[Feature-selected full-image fold metrics](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/most_discriminant/full/resultados_features_all_full_most_discriminant.csv)
+[Feature-selected full-image fold metrics](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/most_discriminant/full/resultados_features_all_full_most_discriminant.csv)
 
-[Feature-selected full-image statistical test](https://github.com/BIMCV-CSUSP/Radiomics-Prostate-Cancer/blob/main/results/radiomics/most_discriminant/full/model_differences/model_differences_summary.txt)
+[Feature-selected full-image statistical test](https://github.com/Prince4552/ProstaVision-Decoding-Prostate-Cancer-from-MRI-with-AI/blob/main/results/radiomics/most_discriminant/full/model_differences/model_differences_summary.txt)
 
 ## 11. Important Limitations
 
