@@ -1,0 +1,16 @@
+=== Configuration: config7 ===
+
+AUC (median [IQR])
+  • Gland............. 0.7009 [0.0512]
+  • Full image...... 0.6276 [0.0276]
+
+Paired Wilcoxon test (two-sided)
+  W = 0.0000,  p = 6.2500e-02
+Conclusion: not statistically significant (α = 0.05)
+
+One-sided Wilcoxon test (H1: gland > full)
+  p = 9.6875e-01
+
+Cohen's d = 1.366  →  LARGE
+
+Summary: no statistically significant differences detected.
