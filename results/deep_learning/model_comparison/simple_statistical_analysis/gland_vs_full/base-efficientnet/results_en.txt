@@ -1,0 +1,16 @@
+=== Configuration: base-efficientnet ===
+
+AUC (median [IQR])
+  • Gland............. 0.6420 [0.0225]
+  • Full image...... 0.6324 [0.0130]
+
+Paired Wilcoxon test (two-sided)
+  W = 7.0000,  p = 1.0000e+00
+Conclusion: not statistically significant (α = 0.05)
+
+One-sided Wilcoxon test (H1: gland > full)
+  p = 5.0000e-01
+
+Cohen's d = 0.326  →  SMALL
+
+Summary: no statistically significant differences detected.
