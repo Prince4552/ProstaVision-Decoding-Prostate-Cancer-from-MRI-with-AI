@@ -1,0 +1,16 @@
+=== Configuration: base-vit ===
+
+AUC (median [IQR])
+  • Gland............. 0.5000 [0.0000]
+  • Full image...... 0.5586 [0.0215]
+
+Paired Wilcoxon test (two-sided)
+  W = 0.0000,  p = 6.2500e-02
+Conclusion: not statistically significant (α = 0.05)
+
+One-sided Wilcoxon test (H1: gland > full)
+  p = 9.6875e-01
+
+Cohen's d = -2.322  →  LARGE
+
+Summary: no statistically significant differences detected.
