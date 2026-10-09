@@ -12,4 +12,4 @@ One-sided Wilcoxon Test (H₁: gland > full)
   p = 1.0000e+00
 
 Summary:
-  The approach with the higher median AUC is **gland**.
+  The approach with the higher median AUC is gland.
